@@ -20,7 +20,9 @@ document.onkeyup = function(event) {
     storeguess = [];
     computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
   } 
-  else{guessesLeft--;}
+  else{
+    guessesLeft--;
+  }
 
 // IF LOSE
   if (guessesLeft === 0)  {
@@ -41,7 +43,7 @@ document.onkeyup = function(event) {
 "<p>wins: " + wins + "</p>" +
 "<p>losses: " + losses + "</p>" +
 "<p>Guess's Left: " + guessesLeft + "</p>" +
-"<p>You chose: " + " " + storeguess + " ," + "</p>" ;
+"<p>You chose: " + " " + storeguess + "</p>" ;
 
 document.querySelector("#game").innerHTML = html;
 
