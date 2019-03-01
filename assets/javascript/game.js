@@ -34,7 +34,7 @@ document.onkeyup = function(event) {
 
 
 // SHOWS GUESS IN YOU CHOSE
-  storeguess.push(event.key)
+  storeguess.push(event.key);
 }
 
 
